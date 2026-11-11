@@ -1,0 +1,26 @@
+[Unit]
+Description=Telegram AI Monitor
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=10
+
+[Service]
+Type=simple
+User=telegrammon
+Group=telegrammon
+WorkingDirectory=/opt/telegram-monitor
+ExecStart=/opt/telegram-monitor/.venv/bin/python -m app.main run
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=30
+Environment=PYTHONUNBUFFERED=1
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/telegram-monitor/data /opt/telegram-monitor/logs
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

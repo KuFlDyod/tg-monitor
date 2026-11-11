@@ -1,0 +1,18 @@
+# Runtime versions exercised on Python 3.14.4; verify on target Python/OS before rollout.
+aiosqlite==0.22.1
+anyio==4.16.0
+certifi==2026.10.23
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.20
+pyaes==1.6.1
+pyasn1==0.6.5
+python-dotenv==1.2.4
+python-socks==2.8.2
+PyYAML==6.0.3
+regex==2026.11.9
+rsa==4.9.1
+socksio==1.0.0
+Telethon==1.45.0
+typing_extensions==4.16.0

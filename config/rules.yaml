@@ -1,0 +1,37 @@
+rules:
+  - id: vps_discount
+    name: VPS 优惠
+    enabled: true
+    keywords: [优惠, 补货, 黑五, 闪购, 年付]
+    blacklist: [广告招租]
+    ai_check: true
+    min_score: 75
+    cooldown_seconds: 300
+    aggregation_seconds: 20
+
+  - id: server_issue
+    name: 服务器故障
+    enabled: true
+    keywords: [宕机, 丢包, 封IP, 退款]
+    ai_check: true
+    min_score: 80
+    cooldown_seconds: 600
+    aggregation_seconds: 20
+
+  # Local deterministic rule example, disabled by default.
+  - id: cheap_monthly
+    name: 低价月付（规则候选）
+    enabled: false
+    chat_ids: []
+    keywords: [VPS, 服务器]
+    all_keywords: [月付]
+    patterns: []
+    domains: []
+    require_url: true
+    price_max: 4
+    currency: USD
+    period: month
+    ai_check: false
+    min_score: 75
+    cooldown_seconds: 300
+    aggregation_seconds: 0

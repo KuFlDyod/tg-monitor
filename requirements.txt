@@ -1,0 +1,7 @@
+Telethon>=1.36,<2
+aiosqlite>=0.20,<1
+httpx[socks]>=0.27,<1
+PyYAML>=6,<7
+python-dotenv>=1,<2
+python-socks[asyncio]>=2.5,<3
+regex>=2024.5

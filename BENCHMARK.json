@@ -1,0 +1,13 @@
+{
+  "kind": "OFFLINE_SIMULATED_SQLITE_QUEUE_ONLY",
+  "messages": 100000,
+  "elapsed_seconds": 26.258,
+  "messages_per_second": 3808.4,
+  "cpu_seconds": 27.491,
+  "peak_queue_size": 2000,
+  "queue_limit": 2000,
+  "peak_rss_mib_linux": 27.34,
+  "integrity_check": "ok",
+  "python": "3.14.4",
+  "limitations": "Not a 512MB VPS or real Telegram benchmark. No AI/network latency included."
+}

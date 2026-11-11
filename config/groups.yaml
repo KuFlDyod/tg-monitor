@@ -1,0 +1,12 @@
+groups:
+  # Replace with IDs returned by: python -m app.main groups
+  - id: -1001234567890
+    name: VPS交流群
+    enabled: true
+    summary_enabled: true
+    alert_enabled: true
+  - id: -1009876543210
+    name: 技术讨论群
+    enabled: false
+    summary_enabled: true
+    alert_enabled: true
